@@ -1,0 +1,26 @@
+﻿@model IEnumerable<RoxierMongoDB.Models.Maquina>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Maquina: 001</h2>
+
+
+<h3>Dados Manutenção Preditiva</h3>
+<ol class="round">
+    <li class="one">
+        <h5>Temperatura de Trabalho</h5>
+        @Html.Action(
+            "Temperatura",
+            "Maquina",
+            null)
+    </li>
+    <li class="two">
+        <h5>Vibração de Trabalho</h5>
+        @Html.Action(
+            "Vibracao",
+            "Maquina",
+            null)
+    </li>
+</ol>
